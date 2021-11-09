@@ -400,3 +400,162 @@ li {
         font-size: 1.3rem;
     }
 }
+
+@media screen and(min-width: 1260px) {
+    /* header */
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-content: space-between;
+        margin-top: 20px;
+        object-fit: cover;
+    }
+    /* Main/location */
+    .location {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        background-color: lightgray;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .icon-location {
+        align-items: center;
+    }
+    /* bouton recherche */
+    input::placeholder {
+        color: black;
+        font-weight: bold;
+        font-size: 1.3em;
+        width: 250px;
+    }
+    .location-bar {
+        padding: 0 0 0 10px;
+        border: none;
+        border-top: none;
+        border-bottom: none;
+        background-color: lightgrey;
+    }
+    .bloc-bouton {
+        background: #f2f2f2;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .button-box {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+    .button-explorer {
+        border: none;
+        border-radius: 25px 25px 25px 25px;
+        background: rgb(255, 121, 218);
+        background: linear-gradient(90deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+        color: white;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 17px;
+        cursor: pointer;
+        padding: 20px;
+    }
+    /* menu */
+    .bouton1 {
+        border-radius: 16px 16px 16px 16px;
+        background-color: #f2f2f2;
+        color: black;
+        font-size: 1rem;
+        font-weight: bolder;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    .fa,
+    .fas {
+        font-weight: 900;
+        color: grey;
+        margin-right: 15px;
+    }
+    .fa-mobile-alt:before {
+        content: "\f3cd";
+        margin-left: 15px;
+    }
+    /* liste restaurant */
+    .bloc-paris {}
+    .title-h2 {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    .cases-restaurant {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .case-restaurant {
+        border-radius: 20px;
+        background: white;
+        list-style: none;
+        box-shadow: 0px 0px 6px 0px #0000002e;
+        margin-bottom: 25px;
+        color: black;
+        margin: 10px;
+    }
+    .case-restaurant-img-host {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+    .restaurant-name {}
+    .like,
+    .far {
+        align-items: center;
+        margin-left: 550px;
+    }
+    .case-text h3 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        font-size: 1.3rem;
+        padding-left: 15px;
+        margin-bottom: 0;
+        margin-top: 10px;
+        padding-bottom: 5px;
+        justify-content: flex-end;
+    }
+    #like3 {
+        margin-left: 550px;
+    }
+    .emplacement {
+        text-align: unset;
+        padding-left: 15px;
+        font-size: 1.3rem;
+        margin-top: 0;
+        padding-bottom: 10px;
+    }
+    /* footer */
+    .footer-titre h3 {
+        margin-left: 30px;
+        font-size: 1.6rem;
+    }
+    .fa-utensils,
+    .fa-hands-helping {
+        color: white;
+        margin-right: 10px;
+    }
+    .footer-restaurants .ul-footer {
+        display: flex;
+        margin-left: 250px;
+        padding-top: 20px;
+    }
+    .ul-footer,
+    .a {
+        color: white;
+        font-size: 1.3rem;
+    }
+}
