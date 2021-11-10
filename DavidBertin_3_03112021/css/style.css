@@ -393,7 +393,7 @@
         }
     }
     
-    @media screen and(min-width: 1260px) {
+    @media screen and (min-width: 1260px) {
         /* header */
         .logo {
             display: flex;
