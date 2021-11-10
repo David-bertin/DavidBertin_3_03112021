@@ -128,8 +128,8 @@
         margin-bottom: 25px;
         padding-top: 25px;
         padding-bottom: 25px;
-        margin-right: 25px;
-        margin-left: -5px;
+        width: auto;
+        height: auto;
     }
     
     .fa,
@@ -140,7 +140,6 @@
     /* liste restaurant */
     
     .cases-restaurant {
-        display: block;
         margin-bottom: 50px;
     }
     
@@ -305,8 +304,8 @@
             justify-content: center;
             align-items: center;
             margin: 0;
-            margin-left: 300px;
-            margin-right: 300px;
+            height: auto;
+            width: auto;
         }
         .fa,
         .fas {
@@ -464,8 +463,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left: 300px;
-            margin-right: 300px;
+            width: auto;
+            height: auto;
         }
         .fa,
         .fas {
