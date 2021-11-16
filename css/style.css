@@ -56,14 +56,13 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    align-content: space-between;
     margin-top: 20px;
     object-fit: cover;
 }
 
 .logo img {
     object-fit: cover;
-    margin-right: -10px;
+    margin-right: 0;
 }
 
 
@@ -342,23 +341,22 @@ footer {
 
 /* version tablette */
 
-@media screen and (min-width: 728px) and (max-width: 1259px) {
+@media screen and (min-width: 768px) and (max-width: 1259px) {
     h2 {
         margin-left: 0;
     }
     /* header */
     .logo {
         display: flex;
-        flex-direction: row;
-        align-content: space-between;
-        justify-content: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         padding-left: 30px;
         padding-bottom: 25px;
     }
     .logo img {
         object-fit: cover;
-        margin-left: 236px;
+        margin-left: 20;
     }
     /* h2 */
     .fonctionnement-box h2 {
@@ -411,8 +409,8 @@ footer {
     }
     /* menu */
     .menu {
-        padding-left: 27%;
-        padding-right: 33%;
+        padding-left: 24%;
+        padding-right: 28%;
         margin-left: 10%;
     }
     .menu li {
@@ -424,10 +422,9 @@ footer {
         width: 30px;
         border-radius: 50%;
         color: white;
-        transform: translateX(-170%);
+        transform: translateX(-90%);
         display: flex;
         flex-direction: column;
-        align-content: space-between;
         justify-content: space-evenly;
         align-items: center;
     }
@@ -447,6 +444,7 @@ footer {
         height: auto;
         width: auto;
         margin-bottom: 20px;
+        padding-right: 0;
     }
     .bouton1 p {
         margin: 0;
@@ -565,9 +563,9 @@ footer {
     /* header */
     .logo {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        align-content: space-between;
+        justify-content: space-between;
         margin-top: 20px;
         object-fit: cover;
     }
