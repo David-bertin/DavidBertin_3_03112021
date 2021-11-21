@@ -179,6 +179,7 @@ input::placeholder {
 }
 
 .button-explorer {
+    opacity: 1;
     border: none;
     border-radius: 25px 25px 25px 25px;
     background: rgb(255, 121, 218);
@@ -193,6 +194,13 @@ input::placeholder {
     padding-top: 17px;
     padding-bottom: 17px;
     position: absolute;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
+}
+
+.button-explorer:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: .3s;
 }
 
 
@@ -235,6 +243,16 @@ input::placeholder {
     padding-right: 10px;
     align-items: center;
     font-size: 1.1rem;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 16%);
+}
+
+.bouton1:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
+    background: white;
 }
 
 .bouton1 p {
@@ -248,11 +266,24 @@ input::placeholder {
     margin-right: -20px;
 }
 
+.fa-mobile-alt {
+    color: grey;
+    margin-left: -10px;
+}
+
+.fa-list-ul {
+    color: grey;
+    margin-left: -10px;
+}
+
+.fa-store {
+    color: grey;
+    margin-left: -10px;
+}
+
 .fa,
 .fas {
     font-weight: 900;
-    color: grey;
-    margin-left: -10px;
 }
 
 .fa-mobile-alt:before {
@@ -295,11 +326,11 @@ input::placeholder {
     list-style: none;
     box-shadow: 0px 0px 6px 0px #0000002e;
     margin-bottom: 25px;
-    color: black;
     margin-left: 20px;
     margin-right: 20px;
     transition: ease 0.3s;
     position: relative;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
 }
 
 .case-restaurant:hover {
@@ -323,17 +354,40 @@ input::placeholder {
     position: absolute;
 }
 
-.heart-icon {
-    transform: translateX(-60%);
+.case-text-icon {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
-#icon-heart {
-    width: 35px;
+.case-text {
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-heart {
+    display: inline-block;
+    text-align: right;
+    margin-top: 15%;
+    font-size: x-large;
+    transform: translateX(-10%);
+    cursor: pointer;
+}
+
+.LikeCardGradeIconFull {
+    position: absolute;
+    top: 2px;
+    content: "\f004";
+    background: rgb(255, 121, 218);
+    background: linear-gradient( 151deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+    font-size: 25px;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
 }
 
 .case-text h3 {
     display: flex;
-    flex-direction: row-reverse;
     margin-top: 5px;
     font-size: 1.3rem;
     padding-left: 15px;
@@ -514,8 +568,6 @@ footer {
     .fa,
     .fas {
         font-weight: 900;
-        color: grey;
-        margin-left: -10px;
     }
     .fa-mobile-alt:before {
         content: "\f3cd";
@@ -568,25 +620,12 @@ footer {
         border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
-    .favori {
-        position: absolute;
-    }
-    .heart-icon {
-        transform: translateX(-60%);
-    }
-    .heart-icon:hover {
-        display: none;
-    }
-    .heart-icon-full:hover {
-        opacity: 1;
-    }
     .case-text .heart-full {
         transform: translateY(-158%);
         position: absolute;
     }
     .case-text h3 {
         display: flex;
-        flex-direction: row-reverse;
         margin-top: 5px;
         font-size: 1.3rem;
         padding-left: 15px;
@@ -658,6 +697,7 @@ footer {
     }
     .icon-location {
         align-items: center;
+        padding-right: 8px;
     }
     /* bouton recherche */
     input::placeholder {
@@ -736,8 +776,6 @@ footer {
     .fa,
     .fas {
         font-weight: 900;
-        color: grey;
-        margin-right: 15px;
     }
     .fa-mobile-alt:before {
         content: "\f3cd";
@@ -770,9 +808,6 @@ footer {
         border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
-    .heart-icon {
-        transform: translateX(-60%);
-    }
     .case-text h3 {
         display: flex;
         flex-direction: none;
@@ -783,9 +818,6 @@ footer {
         margin-top: 10px;
         padding-bottom: 5px;
         justify-content: space-between;
-    }
-    #like3 {
-        margin-left: 550px;
     }
     .emplacement {
         text-align: unset;
