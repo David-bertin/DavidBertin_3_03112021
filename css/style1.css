@@ -111,6 +111,43 @@ header .header_flecheretour a {
     padding-bottom: 15px;
 }
 
+.icon-heart {
+    display: inline-block;
+    text-align: right;
+    margin-top: 15%;
+    font-size: x-large;
+    transform: translateX(-45%);
+    cursor: pointer;
+    position: relative;
+}
+
+.icon-heart:hover .LikeCardGradeIcon {
+    opacity: 0;
+    color: black;
+}
+
+.icon-heart .LikeCardGradeIconFull {
+    transition: 1.2s;
+}
+
+.icon-heart:hover .LikeCardGradeIconFull {
+    opacity: 1;
+}
+
+.icon-heart .LikeCardGradeIcon {
+    transition: 1s;
+}
+
+.LikeCardGradeIconFull {
+    position: absolute;
+    top: 2px;
+    background: linear-gradient( 151deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+}
+
 
 /* bouton entré, plats, desserts */
 
@@ -194,6 +231,10 @@ i.far {
     margin-top: 65px;
 }
 
+button:hover {
+    filter: brightness(1);
+}
+
 
 /* footer */
 
@@ -248,7 +289,7 @@ footer {
     .header {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         margin-right: 80px;
         margin-top: 20px;
         margin-bottom: 10px;
@@ -262,11 +303,11 @@ footer {
         font-size: 20px;
     }
     .fa-arrow-left {
-        padding-left: 10px;
+        transform: translateX(-1470%);
     }
     .header_flecheretour {
-        margin-left: -15px;
-        padding-left: 15px;
+        margin-left: 0;
+        padding-left: 0;
     }
     header .header_flecheretour a {
         color: #000;
@@ -409,8 +450,7 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-        margin-right: 25%;
+        justify-content: center;
         margin-top: 20px;
         margin-bottom: 10px;
     }
@@ -423,11 +463,11 @@ footer {
         font-size: 20px;
     }
     .fa-arrow-left {
-        padding-left: 10px;
+        transform: translateX(-2350%);
     }
     .header_flecheretour {
-        margin-left: -10%;
-        padding-left: 250px;
+        margin-left: 0;
+        padding-left: 0;
     }
     header .header_flecheretour a {
         color: #000;
@@ -437,7 +477,6 @@ footer {
     }
     .logo img {
         object-fit: cover;
-        margin-right: 350px;
     }
     .restaurant {
         background-color: #f2f2f2;
