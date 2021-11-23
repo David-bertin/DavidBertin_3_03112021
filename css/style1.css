@@ -139,12 +139,16 @@ header .header_flecheretour a {
 
 .LikeCardGradeIconFull {
     position: absolute;
-    bottom: 10px;
     background: linear-gradient( 151deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
     -webkit-background-clip: text;
     background-clip: none;
     -webkit-text-fill-color: transparent;
     opacity: 0;
+}
+
+.fa-heart:before {
+    content: "\f004";
+    font-size: 30px;
 }
 
 
@@ -540,12 +544,21 @@ footer {
         width: 13%;
         border-bottom: 3px solid #99E2D0;
     }
-    i.fa-heart {
-        margin-right: 20px;
+    .icon-heart:hover .LikeCardGradeIcon {
+        opacity: 0;
+        color: black;
     }
-    i.far {
-        font-weight: 400;
-        font-size: 1.5rem;
+    .icon-heart .LikeCardGradeIconFull {
+        transition: 1.2s;
+    }
+    .icon-heart:hover .LikeCardGradeIconFull {
+        opacity: 1;
+        transform: translateX(-200%);
+    }
+    .icon-heart .LikeCardGradeIcon {
+        transition: 1s;
+        position: absolute;
+        transform: translateX(-200%);
     }
     .menu-resto {
         display: grid;

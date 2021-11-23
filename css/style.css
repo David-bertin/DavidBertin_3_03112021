@@ -404,6 +404,11 @@ button:hover {
     opacity: 0;
 }
 
+.fa-heart:before {
+    content: "\f004";
+    font-size: 30px;
+}
+
 .case-text h3 {
     display: flex;
     margin-top: 5px;
@@ -837,12 +842,11 @@ footer {
         padding-bottom: 5px;
         justify-content: space-between;
     }
-    .coeur-gauche {
-        position: absolute;
-        left: 30%;
+    .icon-heart .LikeCardGradeIcon {
+        transform: translateX(160%);
     }
-    .coeur-droit {
-        position: absolute;
+    .icon-heart .LikeCardGradeIconFull {
+        transform: translateX(160%);
     }
     .emplacement {
         text-align: unset;
