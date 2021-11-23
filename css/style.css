@@ -59,8 +59,8 @@ p {
     position: absolute;
     z-index: 100;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     animation: disparaitre 2s linear forwards;
 }
 
@@ -79,7 +79,7 @@ p {
     border-radius: 50%;
     border: 6px solid #fff;
     border-color: #9356DC transparent #FF79DA transparent;
-    animation: lds-dual-ring 2s linear forwards;
+    animation: lds-dual-ring 2.5s linear forwards;
 }
 
 @keyframes lds-dual-ring {
@@ -95,8 +95,11 @@ p {
     0% {
         opacity: 1;
     }
-    100% {
+    99% {
         opacity: 0;
+    }
+    100% {
+        visibility: hidden;
     }
 }
 
@@ -166,7 +169,7 @@ input::placeholder {
     background-color: lightgrey;
 }
 
-.bloc-bouton {
+.bloc-titre {
     background: #f2f2f2;
     padding-top: 30px;
     padding-bottom: 80px;
@@ -176,7 +179,6 @@ input::placeholder {
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
-    position: relative;
 }
 
 .button-explorer {
@@ -192,15 +194,16 @@ input::placeholder {
     padding-right: 22px;
     padding-top: 17px;
     padding-bottom: 17px;
-    position: absolute;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
-    -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
-    cursor: pointer;
 }
 
 button {
     cursor: pointer;
+}
+
+button:hover {
     filter: brightness(1.1);
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
 }
 
 
@@ -244,15 +247,14 @@ button {
     align-items: center;
     font-size: 1.1rem;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 16%);
+    cursor: pointer;
 }
 
 .bouton1:hover {
     opacity: 0.8;
-    cursor: pointer;
-    -webkit-transition: .3s;
-    transition: .3s;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
     background: white;
+    filter: brightness(1.1);
 }
 
 .bouton1 p {
