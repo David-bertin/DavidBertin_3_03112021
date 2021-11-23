@@ -179,6 +179,7 @@ i.far {
     padding-bottom: 1px;
     padding-right: 0;
     padding-top: 0;
+    position: relative;
 }
 
 .card-selection h3 {
@@ -210,6 +211,7 @@ i.far {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
 }
 
 .card-selection:hover .square-green {
@@ -219,7 +221,7 @@ i.far {
 }
 
 .card-selection .square-green .fa-check-circle {
-    transition: all 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .card-selection:hover .square-green .fa-check-circle {
