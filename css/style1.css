@@ -553,7 +553,8 @@ footer {
     }
     .icon-heart:hover .LikeCardGradeIconFull {
         opacity: 1;
-        transform: translateX(-200%);
+        position: absolute;
+        transform: translateX(-150%);
     }
     .icon-heart .LikeCardGradeIcon {
         transition: 1s;
