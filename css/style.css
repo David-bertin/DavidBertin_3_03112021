@@ -877,10 +877,10 @@ footer {
         justify-content: space-between;
     }
     .icon-heart .LikeCardGradeIcon {
-        transform: translateX(160%);
+        transform: translateX(20%);
     }
     .icon-heart .LikeCardGradeIconFull {
-        transform: translateX(160%);
+        transform: translateX(20%);
     }
     .emplacement {
         text-align: unset;
