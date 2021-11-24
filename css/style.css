@@ -759,7 +759,8 @@ footer {
         padding: 20px;
     }
     .fonctionnement-box h2 {
-        margin-left: 41%;
+        transform: translateX(40%);
+        margin-bottom: 50px;
     }
     /* menu */
     .circle-number {
@@ -768,7 +769,7 @@ footer {
         width: 30px;
         border-radius: 50%;
         color: white;
-        transform: translateX(-125%);
+        transform: translateX(-60%);
         display: flex;
         flex-direction: column;
         align-content: space-between;
@@ -776,8 +777,13 @@ footer {
         align-items: center;
     }
     .menu {
-        margin-left: 35%;
-        margin-right: 35%;
+        margin-left: 15%;
+        margin-right: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        transform: translateY(30%);
     }
     .bouton1 {
         border-radius: 16px 16px 16px 16px;
@@ -800,10 +806,25 @@ footer {
     .fas {
         font-weight: 900;
     }
+    .fa-mobile-alt {
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    .fa-list-ul {
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    .fa-store {
+        margin-left: 5px;
+        margin-right: 10px
+    }
     .fa-mobile-alt:before {
         content: "\f3cd";
     }
     /* liste restaurant */
+    .bloc-paris {
+        margin-top: 100px;
+    }
     .title-h2 {
         display: flex;
         justify-content: center;
@@ -813,6 +834,7 @@ footer {
     .cases-restaurant {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
         margin-left: 80px;
         margin-right: 80px;
     }
