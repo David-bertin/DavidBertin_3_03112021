@@ -882,6 +882,9 @@ footer {
     .icon-heart .LikeCardGradeIconFull {
         transform: translateX(20%);
     }
+    .LikeCardGradeIconFull {
+        top: 0;
+    }
     .emplacement {
         text-align: unset;
         padding-left: 15px;
