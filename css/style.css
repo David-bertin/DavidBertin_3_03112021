@@ -7,7 +7,7 @@ ul li {
 }
 
 main {
-    max-width: 1860px;
+    max-width: 1880px;
     margin: 0 auto;
     ;
 }
@@ -172,7 +172,7 @@ input::placeholder {
 .bloc-titre {
     background: #f2f2f2;
     padding-top: 30px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
 .button-box {
@@ -201,7 +201,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button-explorer:hover {
     filter: brightness(1.1);
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
 }
@@ -373,7 +373,7 @@ button:hover {
     text-align: right;
     margin-top: 15%;
     font-size: x-large;
-    transform: translateX(-45%);
+    transform: translateX(-25%);
     cursor: pointer;
     position: relative;
 }
@@ -540,6 +540,7 @@ footer {
         cursor: pointer;
         padding: 20px;
         position: absolute;
+        transform: translateX(-43%);
     }
     /* menu */
     .menu {
@@ -768,8 +769,9 @@ footer {
         padding: 20px;
     }
     .fonctionnement-box h2 {
-        transform: translateX(43%);
         margin-bottom: 50px;
+        display: flex;
+        justify-content: space-around;
     }
     /* menu */
     .circle-number {
