@@ -195,6 +195,7 @@ input::placeholder {
     padding-top: 17px;
     padding-bottom: 17px;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
+    transition: 0.7s;
 }
 
 button {
@@ -202,6 +203,7 @@ button {
 }
 
 .button-explorer:hover {
+    transition-duration: 0.7s;
     filter: brightness(1.1);
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
 }
@@ -249,13 +251,15 @@ button {
     font-size: 1.1rem;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 16%);
     cursor: pointer;
+    transition: 0.8s;
 }
 
 .bouton1:hover {
     opacity: 0.8;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
-    background: white;
+    background: #FF79DA;
     filter: brightness(1.1);
+    transition-duration: 0.7s;
 }
 
 .bouton1 p {
@@ -274,14 +278,26 @@ button {
     margin-left: -10px;
 }
 
+.fa-mobile-alt:hover {
+    color: #9356DC;
+}
+
 .fa-list-ul {
     color: grey;
     margin-left: -10px;
 }
 
+.fa-list-ul:hover {
+    color: #9356DC;
+}
+
 .fa-store {
     color: grey;
     margin-left: -10px;
+}
+
+.fa-store:hover {
+    color: #9356DC;
 }
 
 .fa,
