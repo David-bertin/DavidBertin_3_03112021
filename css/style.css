@@ -217,7 +217,7 @@ button {
     width: 30px;
     border-radius: 50%;
     color: white;
-    transform: translateX(-100%);
+    transform: translateX(-150%);
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -257,8 +257,7 @@ button {
 .bouton1:hover {
     opacity: 0.8;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
-    background: #FF79DA;
-    filter: brightness(1.1);
+    background: rgba(147, 86, 220, 0.16);
     transition-duration: 0.7s;
 }
 
@@ -273,36 +272,16 @@ button {
     margin-right: -20px;
 }
 
-.fa-mobile-alt {
-    color: grey;
+.bouton1 i {
     margin-left: -10px;
 }
 
-.fa-mobile-alt:hover {
-    color: #9356DC;
-}
-
-.fa-list-ul {
+.icon {
     color: grey;
-    margin-left: -10px;
 }
 
-.fa-list-ul:hover {
+.icon:hover {
     color: #9356DC;
-}
-
-.fa-store {
-    color: grey;
-    margin-left: -10px;
-}
-
-.fa-store:hover {
-    color: #9356DC;
-}
-
-.fa,
-.fas {
-    font-weight: 900;
 }
 
 .fa-mobile-alt:before {
@@ -805,7 +784,7 @@ footer {
     }
     .menu {
         margin-left: 16%;
-        margin-right: 15%;
+        margin-right: 13%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -824,6 +803,7 @@ footer {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        padding-right: 15px;
         width: auto;
         height: auto;
     }
@@ -856,6 +836,18 @@ footer {
     }
     .fa-mobile-alt:before {
         content: "\f3cd";
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }
+    .fa-list-ul:before {
+        content: "\f0ca";
+        font-size: 1.1rem;
+        margin-left: 10px;
+    }
+    .fa-store:before {
+        content: "\f54e";
+        font-size: 1.1rem;
+        margin-left: 10px;
     }
     /* liste restaurant */
     .bloc-paris {
